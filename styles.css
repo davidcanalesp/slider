@@ -1,0 +1,63 @@
+body{
+
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    box-sizing: border-box;
+    margin: 0; 
+
+}
+
+.title{
+    text-align: center;
+    color: blue;
+    font-size: 3em;
+    margin: 1em;
+}
+
+.slider{
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider__images{
+    position: relative;
+    left: 0;
+    transition: all .5s;
+    /*Las siguientes reglas son para visualizar el slider__images
+        width: 60px;
+        height: 60px;
+        background: lightblue;
+        left: 0px; /*si cambiamos este valor (que es lo que haremos con js, veremos como cambiade lugar el silider*/
+    
+}
+
+.slider__navigation{
+    display: flex;
+    justify-content: space-around;    
+   /*las siguientes propiedades son solo para visualizar
+    background: green;width: 60%;
+    height: 1.5em;
+    padding: 0.5em;
+    margin: 1em auto;*/
+
+}
+
+
+.slider-nav{
+    background: pink;
+    width: 1.5em;
+    height: 1.3em;
+    border-radius: 50px;
+    box-shadow: 2px 3px 2px gray inset;
+}
+
+.slider-nav:hover{
+    background-color: hotpink;
+}
+
+
+.slider-nav--active{
+    box-shadow: 2px 2px grey;
+    background: red;
+    
+}
